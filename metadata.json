@@ -1,0 +1,6 @@
+{
+  "name": "MiBus Santiago",
+  "description": "Aplicación de transporte público de Santiago de Chile para consultar buses Red Movilidad, saldo de tarjeta BIP, recorridos y paraderos favoritos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
