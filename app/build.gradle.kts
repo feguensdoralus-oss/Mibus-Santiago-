@@ -21,6 +21,20 @@ android {
     versionName = "1.0"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    // Reducción de recursos de idiomas innecesarios de librerías de terceros (Firebase, Play Services)
+    resourceConfigurations += listOf("es", "en")
+  }
+
+  packaging {
+    resources {
+      excludes += listOf(
+        "/META-INF/{AL2.0,LGPL2.1}",
+        "/META-INF/LICENSE*",
+        "/META-INF/NOTICE*",
+        "/META-INF/INDEX.LIST",
+        "/META-INF/DEPENDENCIES"
+      )
+    }
   }
 
   signingConfigs {
